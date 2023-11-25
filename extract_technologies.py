@@ -7,6 +7,10 @@ import os
 load_dotenv()
 
 def extract_technologies(text):
+    """
+    This function helps extract technologies from a job description
+    """
+
     chat = ChatOpenAI(model="gpt-3.5-turbo-1106", openai_api_key = os.getenv('OPENAI_API_KEY', 'yourapikey'))
     # chat = ChatOpenAI(model="gpt-4-1106-preview", os.getenv('OPENAI_API_KEY', 'yourapikey'))
 
